@@ -11,6 +11,8 @@ This script will query a JIRA server for the given issue key and create a git br
 
 `issuetype/ISSUE-1_issue_summary`
 
+It will also optionally trigger an issue transition in JIRA, e.g. "Start Progress".
+
 Also included is an optional shell wrapper function that will prompt for your JIRA password and export it to an environment variable so you don't have to enter it every time within the same shell session.
 
 ## Installation
