@@ -2,6 +2,9 @@
 
 Create local git branches based on a JIRA issue
 
+Latest version: **0.1.0**
+see [CHANGELOG.md](CHANGELOG.md) for changes from previous versions
+
 ## Description
 
 This script will query a JIRA server for the given issue key and create a git branch based on the issue type, key, and summary in the form of:
