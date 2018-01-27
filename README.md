@@ -60,6 +60,10 @@ There are a number of environment variables that can be set to control how jbran
 
 - example: `JBRANCH_TRANSITION="Start Progress"`
 
+`JBRANCH_ALLOW_EDIT` - allow editing of the branch name before creation
+
+- example: `JBRANCH_ALLOW_EDIT=1`
+
 `JBRANCH_NO_COLOR` - don't use colors in output
 
 - example: `JBRANCH_NO_COLOR=1`

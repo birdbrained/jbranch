@@ -9,6 +9,7 @@ import sys
 from colorama import Fore, Style
 from getpass import getpass
 from jira import JIRA, JIRAError
+from prompt_toolkit.shortcuts import prompt
 
 
 def bold(text):
@@ -97,6 +98,9 @@ else:
 branch = '{0}/{1}_{2}'.format(branch_type, key, summary)
 branch = re.sub(r'\s+', '_', branch)
 branch = re.sub(r'[^\w\-\/]', '', branch)
+
+if os.environ.get('JBRANCH_ALLOW_EDIT'):
+    branch = prompt(u'Branch name: ', default=branch.decode('utf-8'))
 
 action('Creating branch ' + bold(branch))
 
