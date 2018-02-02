@@ -76,6 +76,10 @@ There are a number of environment variables that can be set to control how jbran
 
 - example: `JBRANCH_LC_FIRST=1`
 
+`JBRANCH_NO_PREFIX` - disable branch name prefixing
+
+- example: `JBRANCH_NO_PREFIX=1`
+
 `JBRANCH_NO_SWITCH` - don't switch to the branch after it is created
 
 - example: `JBRANCH_NO_SWITCH=1`

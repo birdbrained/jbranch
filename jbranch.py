@@ -95,7 +95,9 @@ elif os.environ.get('JBRANCH_LC_FIRST'):
 else:
     summary = issue.fields.summary
 
-branch = '{0}/{1}_{2}'.format(branch_type, key, summary)
+branch = '{0}_{1}'.format(key, summary)
+if not os.environ.get('JBRANCH_NO_PREFIX'):
+    branch = '{0}/{1}'.format(branch_type, branch)
 branch = re.sub(r'\s+', '_', branch)
 branch = re.sub(r'[^\w\-\/]', '', branch)
 

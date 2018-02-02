@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 ### Added
 - `JBRANCH_ALLOW_EDIT` option to allow editing the branch name before creation
+- `JBRANCH_NO_PREFIX` option to disable prefixing the branch name
+
+### Fixed
+- bug where encountering an OSError would blow up instead of print nice message
 
 ## [0.1.0] - 2018-01-26
 ### Added
