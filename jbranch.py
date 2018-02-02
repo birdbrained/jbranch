@@ -116,7 +116,7 @@ try:
             stderr=subprocess.STDOUT
         )
 except OSError as e:
-    error(e)
+    error(str(e))
 except subprocess.CalledProcessError as e:
     error(e.output.rstrip())
 else:
